@@ -1,5 +1,20 @@
 # Yume auth
 
+<div align="center">
+  <img align="center"  width="auto" height="auto" src="/public/logo.png" />
+  <br/>
+
+  <div id="user-content-toc">
+    <ul>
+      <summary>
+      <h1 style="display: inline-block;">Yume</h1>
+      <br/>
+      <h3 style="display: inline-block;">The AI-powered social wish-list platform</h3>
+      </summary>
+    </ul>
+  </div>
+</div>
+
 Yume auth is the micro-service that handles the authorization, authentication and security-based requests of [Yume](https://yume.so).
 
 This is a micro-service to serve as an example of how to develop an scalable (architecture & tech) micro-service using python, flask and a combination oh _HTTP_ & _Event-based_ requets
@@ -32,6 +47,7 @@ git clone https://gagocarrilloedgar/yume-auth
 ## Local development (**In progress**)
 
 Install the dependencies, take a look at [Python with pipenv](https://realpython.com/pipenv-guide/) for more info.
+
 ```sh
 pipenv shell
 pipenv install
@@ -55,8 +71,10 @@ pipenv start
 ```
 
 Formating and linting
-https://www.jumpingrivers.com/blog/python-linting-guide/
-pylint
+
+- https://www.jumpingrivers.com/blog/python-linting-guide/
+- pylint
+- https://www.freecodecamp.org/news/auto-format-your-python-code-with-black/
 
 ## Project structure
 
@@ -101,6 +119,7 @@ git branch <category/reference/description-in-kebab-case>
 The Conventional Commits specification is a lightweight convention on top of commit messages. If you want to read more about it: [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
 [TBD]-> Look for husky and lint-staged alternatives in Python:
+
 - https://pre-commit.com/
 - https://pypi.org/project/autohooks/
 
@@ -130,14 +149,7 @@ git commit <feat(layout): sidenav redirection added>
 
 ## Yume related repositories
 
-- [Client](https://github.com/gagocarrilloedgar/yume)
-  - **Main technologies**: React, TS, Vite, SCSS, Storybook, Vercel, Jest & Cypress
-- [Auth service](https://github.com/gagocarrilloedgar/yume-auth)
-  - **Main technologies**: Python, Pipenv, PostgreSQL, Flask, Flasgger, Flask-Marshmallow, SQLAlchemy
-- [Wishes service](https://github.com/gagocarrilloedgar/yume-api):
-  - **Main technologies**: ExpressJS, TS, Node, PostgreSQL, Prisma, TS-Openapi.
-- [Recommendations service](https://github.com/gagocarrilloedar/yume-recommendations):
-  - **Main technologies**: Python, Pipenv, Transformers, Huggingface API, Flask, Flask, Flasgger, Flask-Marshmallow, Serverless
+For more info regarding all the repositories that include Yume take a look at: [Yume's github](https://github.com/yumedotso)
 
 ## References
 
