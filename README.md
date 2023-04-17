@@ -1,7 +1,7 @@
 # Yume auth
 
 <div align="center">
-  <img align="center"  width="auto" height="auto" src="/public/logo.png" />
+  <img align="center"  width="auto" height="auto" src="/assets/logo.png" />
   <br/>
 
   <div id="user-content-toc">
