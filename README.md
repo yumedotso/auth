@@ -6,7 +6,7 @@ This is a micro-service to serve as an example of how to develop an scalable (ar
 
 - [Yume auth](#yume-auth)
   - [Gettings started](#gettings-started)
-  - [Local development](#local-development)
+  - [Local development (**In progress**)](#local-development-in-progress)
   - [Project structure](#project-structure)
   - [Development convections](#development-convections)
     - [Branch naming](#branch-naming)
@@ -29,15 +29,11 @@ Clone the repository
 git clone https://gagocarrilloedgar/yume-auth
 ```
 
-## Local development
+## Local development (**In progress**)
 
-Install the dependencies
-
+Install the dependencies, take a look at [Python with pipenv](https://realpython.com/pipenv-guide/) for more info.
 ```sh
 pipenv shell
-```
-
-```sh
 pipenv install
 ```
 
@@ -57,6 +53,10 @@ cp .env.example .env
 #Start it
 pipenv start
 ```
+
+Formating and linting
+https://www.jumpingrivers.com/blog/python-linting-guide/
+pylint
 
 ## Project structure
 
@@ -100,7 +100,9 @@ git branch <category/reference/description-in-kebab-case>
 
 The Conventional Commits specification is a lightweight convention on top of commit messages. If you want to read more about it: [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
-[TBD]-> Look for husky and lint-staged alternatives in Python
+[TBD]-> Look for husky and lint-staged alternatives in Python:
+- https://pre-commit.com/
+- https://pypi.org/project/autohooks/
 
 The tipical categories are:
 
