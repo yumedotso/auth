@@ -38,6 +38,8 @@ This is a micro-service to serve as an example of how to develop an scalable (ar
 
 ## Gettings started
 
+Before getting started you need [poetry](https://python-poetry.org/) as package manager.
+
 Clone the repository
 
 ```sh
@@ -49,15 +51,14 @@ git clone https://gagocarrilloedgar/yume-auth
 Install the dependencies, take a look at [Python with pipenv](https://realpython.com/pipenv-guide/) for more info.
 
 ```sh
-pipenv shell
-pipenv install
+poetry init
 ```
 
 Run the migrations
 
 ```sh
-pipenv run migrate
-pipenv run upgrade
+poetry run migrate
+poetry run upgrade
 ```
 
 And start the server:
@@ -67,7 +68,7 @@ And start the server:
 cp .env.example .env
 
 #Start it
-pipenv start
+poetry run start
 ```
 
 Formating and linting
@@ -162,3 +163,31 @@ For more info regarding all the repositories that include Yume take a look at: [
 ## License
 
 [MIT](/LICENSE)
+
+----
+
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+pytest = "*"
+pylint = "*"
+
+[dev-packages]
+pytest = "*"
+black = "*"
+isort = "*"
+
+[scripts]
+format = "black ./src && isort ./src"
+lint = "pylint ./src"
+run:dev = "FLASK_APP=src/app.py FLASK_ENV=development flask run"
+run:prod = "FLASK_APP=src/app.py FLASK_ENV=production flask run"
+run:test:unit = "pytest ./tests/unit"
+run:test:int = "pytest ./tests/integration"
+
+[requires]
+python_version = "3.11"
