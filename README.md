@@ -161,4 +161,4 @@ For more info regarding all the repositories that include Yume take a look at: [
 
 ## License
 
-[MIT](/LICENSE.md)
+[MIT](/LICENSE)
