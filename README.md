@@ -160,3 +160,5 @@ For more info regarding all the repositories that include Yume take a look at: [
 - https://github.com/bajcmartinez/flask-api-starter-kit
 
 ## License
+
+[MIT](/LICENSE.md)
