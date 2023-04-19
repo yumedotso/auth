@@ -31,6 +31,7 @@ This is a micro-service to serve as an example of how to develop an scalable (ar
     - [Convectional commits](#convectional-commits)
   - [Testing](#testing)
   - [Yume related repositories](#yume-related-repositories)
+  - [Error resolution](#error-resolution)
   - [References](#references)
   - [License](#license)
 
@@ -151,6 +152,21 @@ git commit <feat(layout): sidenav redirection added>
 ## Yume related repositories
 
 For more info regarding all the repositories that include Yume take a look at: [Yume's github](https://github.com/yumedotso)
+
+## Error resolution
+
+If you are having environment error in VSCode make sure you have selected the correct python interpreter:
+
+Inside *vscode* run:
+```sh
+cmd + p 
+```
+Search for:
+```sh
+> Python: select interpreter
+```
+
+Then select the one with **poetry** if tou are using that.
 
 ## References
 
