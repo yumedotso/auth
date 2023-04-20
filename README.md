@@ -157,11 +157,14 @@ For more info regarding all the repositories that include Yume take a look at: [
 
 If you are having environment error in VSCode make sure you have selected the correct python interpreter:
 
-Inside *vscode* run:
+Inside _vscode_ run:
+
 ```sh
-cmd + p 
+cmd + p
 ```
+
 Search for:
+
 ```sh
 > Python: select interpreter
 ```
@@ -179,31 +182,3 @@ Then select the one with **poetry** if tou are using that.
 ## License
 
 [MIT](/LICENSE)
-
-----
-
-[[source]]
-url = "https://pypi.org/simple"
-verify_ssl = true
-name = "pypi"
-
-[packages]
-flask = "*"
-pytest = "*"
-pylint = "*"
-
-[dev-packages]
-pytest = "*"
-black = "*"
-isort = "*"
-
-[scripts]
-format = "black ./src && isort ./src"
-lint = "pylint ./src"
-run:dev = "FLASK_APP=src/app.py FLASK_ENV=development flask run"
-run:prod = "FLASK_APP=src/app.py FLASK_ENV=production flask run"
-run:test:unit = "pytest ./tests/unit"
-run:test:int = "pytest ./tests/integration"
-
-[requires]
-python_version = "3.11"
