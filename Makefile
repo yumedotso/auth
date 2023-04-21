@@ -5,13 +5,13 @@ build:
 	poetry install && export FLASK_APP=src/app.py
 
 test_unit:
-	poetry run pytest ./tests/unit
+	poetry run  pytest ./tests/services
 
-test_integration:
-	poetry run pytest ./tests/integration
+test_int:
+	poetry run python3 -m unittest discover -s ./tests/routes -v
 
 test:
-	poetry run pytest ./tests
+	poetry run python3 -m unittest discover -s ./tests
 
 lint:
 	poetry run pylint ./src

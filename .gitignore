@@ -1,2 +1,7 @@
 .env
 .venv
+.vscode
+.pytest_cache
+
+# All __pycache__ directories
+__pycache__/
