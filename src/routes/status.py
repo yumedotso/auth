@@ -14,8 +14,8 @@ SERVER_SETUP_MESSAGE = "The server is up and running"
     {
         "responses": {
             HTTPStatus.OK.value: {
-                "description": "The server is up and running",
-                "schema": {"msg": "The server is up and running"},
+                "description": SERVER_SETUP_MESSAGE,
+                "schema": {"msg": SERVER_SETUP_MESSAGE},
             }
         }
     }
