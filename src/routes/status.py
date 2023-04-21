@@ -4,7 +4,7 @@ from http import HTTPStatus
 from flasgger import swag_from
 from flask import Blueprint, jsonify
 
-from src.schemas.status_schema import StatusSchema
+from schemas.status_schema import StatusSchema
 
 status_blueprint = Blueprint("status", __name__)
 

@@ -3,7 +3,7 @@ from flasgger import Swagger
 from flask import Flask
 from flask_cors import CORS
 
-from src.routes.status import status_blueprint
+from routes.status import status_blueprint
 
 
 # @defintion: create_server
