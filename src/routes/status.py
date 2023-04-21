@@ -4,6 +4,8 @@ from http import HTTPStatus
 from flasgger import swag_from
 from flask import Blueprint, jsonify
 
+from src.schemas.status_schema import StatusSchema
+
 status_blueprint = Blueprint("status", __name__)
 
 SERVER_SETUP_MESSAGE = "The server is up and running"
@@ -15,7 +17,7 @@ SERVER_SETUP_MESSAGE = "The server is up and running"
         "responses": {
             HTTPStatus.OK.value: {
                 "description": SERVER_SETUP_MESSAGE,
-                "schema": {"msg": SERVER_SETUP_MESSAGE},
+                "schema": StatusSchema,
             }
         }
     }
