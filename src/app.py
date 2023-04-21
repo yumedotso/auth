@@ -3,6 +3,8 @@ from flasgger import Swagger
 from flask import Flask
 from flask_cors import CORS
 
+from routes.status import status_blueprint
+
 
 # @defintion: create_server
 def create_server():
@@ -16,9 +18,7 @@ def create_server():
 
     CORS(app)
 
-    @app.get("/")
-    def hello():
-        return "Hello World!"
+    app.register_blueprint(status_blueprint, url_prefix="/api/status")
 
     app.config["SWAGGER"] = {
         "title": "Yume auth API",

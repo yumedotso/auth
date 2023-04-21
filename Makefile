@@ -1,5 +1,5 @@
 dev:
-	python3 src/app.py
+	poetry run python3 src/app.py
 
 build:
 	poetry install && export FLASK_APP=src/app.py
