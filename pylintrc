@@ -1,2 +1,2 @@
 [pylint]
-disable = import-error
+disable = import-error, too-few-public-methods
